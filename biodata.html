@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <script>
+
+        const nama = "Putu Bagus Raditya";
+        const umur = 23;
+        const hobi = ["olahraga", "Menulis", "Bersepeda"];
+        const statusMenikah = false;
+        const listSekolah = [
+            { namaSekolah: "SDN 1 Srigading", tahunMasuk: 2006, tahunLulus: 2012, jurusan: null },
+            { namaSekolah: "SMPN 2 Labuhan Maringgai", tahunMasuk: 2012, tahunLulus: 2015, jurusan: null },
+            { namaSekolah: "SMAN 1 Way Jepara", tahunMasuk: 2015, tahunLulus: 2018, jurusan: "IPA" },
+            { namaSekolah: "Universitas Lampung", tahunMasuk: 2018, tahunLulus: 2023, jurusan: "Fisika" }
+        ];
+        const skills = [
+            {namaSkil: "Dapat mengoprasikan Microsoft Word", level: "advanced"},
+            {namaSkil: "Dapat mengoprasikan Microsoft Excel", level: "advanced"},
+            {namaSkil: "Dapat mengoprasikan Adobe Ilustrator", level: "beginner"}
+        ];
+        
+        // menampilkan biodata ke console
+        console.log("Biodata");
+        console.log("Nama: " + nama);
+        console.log("umur: " + umur + "tahun");
+        console.log("Hobi: " + hobi.join(", "));
+        console.log("Status Menikah: " + (statusMenikah ? "Menikah" : "Belum Menikah"));
+        console.log("\n");
+        console.log("Riwayat Sekolah");
+        for (var i = 0; i < listSekolah.length; i++) {
+            console.log("\n");
+            console.log("Sekolah ke-" + (i+1));
+            console.log("Nama Sekolah: " + listSekolah[i].namaSekolah);
+            console.log("Tahun Masuk: " + listSekolah[i].tahunMasuk);
+            console.log("Tahun Lulus: " + listSekolah[i].tahunLulus);
+            console.log("Jurusan: " + (listSekolah[i].jurusan ? listSekolah[i].jurusan : "Tidak Ada"));
+        }
+
+        for(var i = 0; i < skills.length; i++){
+            console.log("\n");
+            console.log("Skill: " + skills[i].namaSkil + ", Level: " + skills[i].level);
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
